@@ -91,15 +91,14 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path='/about-us' element={<AboutUs />} />
-        <Route path='/product' element={<Dashboard />}>
+        <Route path="/dhayamaran155/batch1" element={<Dashboard />} >
+           <Route index element={<ProductList />} />
            <Route path='productList' element={<ProductList />} />
            <Route path='productPreview/:id/:price' element={<ProductPreview />} />
         </Route>
         <Route path='/product-display/:id' element={<ProductPreviewNew />} />
         <Route path='/general' element={<GeneralL title={"Dynamic Title - 1"} />} />
-        <Route path='/component1' element={<Component1 />} />
-        <Route path='/component2' element={<Component2 />} />
-        <Route path='/component3' element={<Component3 />} />
+        {/* <Route path="/dhayamaran155/batch1/" element={<Dashboard />} /> */}
       </Routes>
       
       {/* <Link to="about-us">About US</Link> */}
