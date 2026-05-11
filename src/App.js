@@ -1,4 +1,5 @@
 import './App.css';
+import { ProductPreviewNew } from './component';
 import { useEffect, useState } from 'react';
 import {Route, Routes } from 'react-router-dom';
 import { Home } from './components/Home';

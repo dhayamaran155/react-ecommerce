@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import axios from 'axios'
 import { Outlet } from 'react-router-dom'
+import { ProductCardNew } from '../../component'
 import { Header } from '../Header'
+
 
 export const Dashboard = () => {
 
