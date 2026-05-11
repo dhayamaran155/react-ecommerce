@@ -1,9 +1,4 @@
-import axios from "axios";
-import { useEffect } from "react";
-import { Component1, Component2, Component3, ProductCardNew, ProductPreview } from "../component";
-import { Dashboard } from "./products/Dashboard";
-import { Link } from "react-router-dom";
-
+import React from 'react'
 export const Home = () => {
     return (
        <>
