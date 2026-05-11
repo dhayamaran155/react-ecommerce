@@ -1,9 +1,6 @@
-import { Link, Outlet } from "react-router-dom"
-import { ProductCard, ProductCardNew } from "../../component"
-import { useEffect, useState } from "react"
-import axios from "axios";
+import React from 'react'
+import { Outlet } from 'react-router-dom'
 import { Header } from '../Header'
-
 
 export const Dashboard = () => {
 

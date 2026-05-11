@@ -1,8 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
 import { useEffect, useState } from 'react';
-import { Component1, Component2, Component3, ProductCard, ProductPreviewNew, UserCard } from './component';
-import { Link, Route, Routes } from 'react-router-dom';
+import {Route, Routes } from 'react-router-dom';
 import { Home } from './components/Home';
 import { AboutUs } from './components/Aboutus';
 import { Dashboard } from './components/products/Dashboard';
