@@ -2,7 +2,7 @@
   "name": "batch1",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://github.com/dhayamaran155/batch1",
+  "homepage":".",
   "dependencies": {
     "@reduxjs/toolkit": "^2.11.2",
     "@tailwindcss/postcss": "^4.1.18",
