@@ -2,7 +2,6 @@ import './App.css';
 import { Routes, Route } from 'react-router-dom';
 
 import { ProductPreviewNew } from './component';
-import { Home } from './components/Home';
 import { AboutUs } from './components/Aboutus';
 import { Dashboard } from './components/products/Dashboard';
 import { ProductList } from './components/products/ProductList';
@@ -12,16 +11,22 @@ import { GeneralL } from './components/General';
 function App() {
   return (
     <div className="App">
+
       <Routes>
 
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Dashboard />}>
+          <Route index element={<ProductList />} />
+        </Route>
 
         <Route path="/about-us" element={<AboutUs />} />
 
         <Route path="/dhayamaran155/batch1" element={<Dashboard />}>
           <Route index element={<ProductList />} />
           <Route path="productList" element={<ProductList />} />
-          <Route path="productPreview/:id/:price" element={<ProductPreview />} />
+          <Route
+            path="productPreview/:id/:price"
+            element={<ProductPreview />}
+          />
         </Route>
 
         <Route
@@ -35,6 +40,7 @@ function App() {
         />
 
       </Routes>
+
     </div>
   );
 }
